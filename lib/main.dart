@@ -9,9 +9,14 @@ class ExpensePlanner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Expense Planner',
+      title: 'Personal Expenses',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.purple),
+      theme: ThemeData(
+        primarySwatch: Colors.purple,
+        accentColor: Colors.amber,
+        fontFamily: 'Quicksand',
+        // appBarTheme: ThemeData.light().textTheme.copyWith(headline6: const TextStyle(fontFamily: 'OpenSans'),),
+      ),
       home: const Home(),
     );
   }
